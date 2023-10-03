@@ -122,6 +122,7 @@
 .principal{
 	background: #28a28e;
 	padding: 30px;
+  text-align: center;
 }
 
 .titulo-principal {
@@ -135,10 +136,6 @@
   padding: 2px;
 }
 
-p {
-	text-align: center;
-  padding: 1%;
-}
 
 #missao {
 	font-size: 20px
@@ -149,25 +146,25 @@ em strong {
 }
 
 .itens {
-	font-style: italic
+	font-style: italic;
+  color: white;
+  font-size: x-large;
+  padding: 50px;
 }
 
 .beneficios {
 	padding: 20px;
   background: linear-gradient(rgba(#182f8c), rgb(255, 255, 255));
+ 
 }
 
 ul {
-	display: flex;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	display: list-item;
 }
 
 .imagembeneficios {
 	width: 50%;
   padding-left: 900px;
-
 }
 .rodape{
     background-color: #f3bc75b2;
@@ -178,3 +175,11 @@ ul {
 body{
   background-color: #182f8c;
 }
+.noivo{
+color: white;
+text-align: left;
+margin-left: 2%;
+margin-right: 2%;
+padding: 1%;
+}
+
