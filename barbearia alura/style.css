@@ -134,6 +134,7 @@
   color: white;
   font-size: xx-large;
   padding: 2px;
+  margin: 20px;
 }
 
 
@@ -147,15 +148,18 @@ em strong {
 
 .itens {
 	font-style: italic;
-  color: white;
+  color: gold;
   font-size: x-large;
   padding: 50px;
+  text-align: left;
+  padding-left: 100px;
 }
 
 .beneficios {
 	padding: 20px;
   background: linear-gradient(rgba(#182f8c), rgb(255, 255, 255));
- 
+  display: flex;
+  text-align: center;
 }
 
 ul {
@@ -163,8 +167,7 @@ ul {
 }
 
 .imagembeneficios {
-	width: 50%;
-  padding-left: 900px;
+padding-left: 400px;;
 }
 .rodape{
     background-color: #f3bc75b2;
@@ -182,4 +185,5 @@ margin-left: 2%;
 margin-right: 2%;
 padding: 1%;
 }
+
 
