@@ -1,135 +1,148 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<link rel="stylesheet" href="reset.css">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Barbearia Alura</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
+		<!DOCTYPE html>
+		<html lang="pt-br">
+			<head>
+				<link rel="stylesheet" href="reset.css">
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Barbearia Alura</title>
+				<link rel="stylesheet" href="style.css">
+			</head>
 
-	<body>
-			<div class="root">
-				<header>
-				  <div class="container-header">
+			<body>
+					<div class="root">
+						<header>
+						<div class="container-header">
+							
+								<img class="cabecalho-imagem" src="logo_barbearia.png" alt= "LOGOSITE"> 
+							
+							<nav>
+								<li>
+									<a href="#quem-somos" class="active">Quem somos</a>
+								</li>
+						
+								<li>
+									<a href="#servico" class="active">Serviços</a>
+								</li>
+						
+								<li>
+									<a href="#odia" class="active"> Dia do Noivo</a>
+								</li>
+
+								<li>
+									<a href="#cortes" class="active">Cortes</a>
+								</li>
+
+								<li>
+									<a href="#contato"class="active">Contato</a>
+								</li>
+							</nav>
 					
-						<img class="cabecalho-imagem" src="logo_barbearia.png" alt= "LOGOSITE"> 
+							<div class="search-container">
+							<input placeholder="Procurar..." />
+							<button>
+								Pesquisar
+							</button>
+							</div>
 					
-					<nav>
-						<li>
-							<a href="#quem-somos" class="active">Quem somos</a>
-						</li>
-				
-						<li>
-							<a href="#servico" class="active">Serviços</a>
-						</li>
-				
-						<li>
-							<a href="#odia" class="active"> Dia do Noivo</a>
-						</li>
+							<div class="mobile-menu">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="close-icon" />
+							</div>
+						</div>
+						</header>
+					
+					
+				<section class="quem-somos">
+						<img class="banner" src="banner.jpeg">
+						<div class="principal">
+							<h2 id="quem-somos">Sobre a Barbearia Alura</h2>
+					
+							<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 
-						<li>
-							<a href="#contato"class="active">Contato</a>
-						</li>
-					</nav>
-			  
-					<div class="search-container">
-					  <input placeholder="Procurar..." />
-					  <button>
-						Pesquisar
-					  </button>
-					</div>
-			  
-					<div class="mobile-menu">
-					  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="close-icon" />
-					</div>
-				  </div>
-				</header>
-			 
-			
-		<section id ="quem-somos">
-				<img class="banner" src="banner.jpeg">
-				<div class="principal">
-					<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
-			
-					<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+							<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
 
-					<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+							<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+						</div>
+				</section>
+				<section id="servico">
+					<h3 class="titulo-centralizado">Benefícios</h3>
+						<div class="beneficios">
+							<ul>
+								<li class="itens">. Atendimento aos Clientes</li>
+								<li class="itens">. Espaço diferenciado</li>
+								<li class="itens">. Localização</li>
+								<li class="itens">. Profissionais Qualificados</li>
+							</ul>
+							<img src="beneficios.png" class="imagembeneficios">
+						</div>
+				</section>
+					<section id="odia">
+						<div class="noivo">
+							<h2 class="titulo-centralizado">O dia do noivo</h2>
+							<p>Já foi o tempo em que o dia do casamento era sinônimo de “Dia da Noiva”, onde todos os mimos eram pensados exclusivamente para elas. A "Barbearia Alura" apresenta o “Dia do Noivo” para que os homens também curtam ao máximo este momento da vida. Afinal, uma ocasião especial merece tratamento exclusivo! Com serviços e atendimento exclusivo, o intuito é proporcionar ao cavalheiro relaxamento e cuidado com o visual para estar impecável no grande momento do “sim”. E o melhor: em todas as nossas Unidades, o cavalheiro tem uma sala especial e climatizada para se preparar e para receber os padrinhos e convidados no maior conforto e estilo.</p>
+						</div>
+					<!-- Javascript -->
+		<script type="text/javascript">
+			window.onload=function(){
+			var tfrow = document.getElementById('tfhover').rows.length;
+			var tbRow=[];
+			for (var i=1;i<tfrow;i++) {
+				tbRow[i]=document.getElementById('tfhover').rows[i];
+				tbRow[i].onmouseover = function(){
 
-					<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-				</div>
+			}
+		};
+		</script>
+
+		<style type="text/css">
+		table.tftable {font-size:12px;color:rgb(255, 255, 255);width:100%;border-width: 1px;border-color: #000000;border-collapse: collapse;}
+		table.tftable th {font-size:20px;background-color:rgb(0, 0, 0);border-width: 1px;padding: 8px;border-style: solid;border-color: #b6b6b6;text-align:left;}
+		table.tftable tr {background-color:#474747;}
+		table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #000000;}
+		table.tftable td {text-align: center;}
+		table.tftable th {text-align: center;}
+		</style>
+
+			<table id="tfhover" class="tftable" border="1">
+			<tr><th>Prata</th><th>Ouro</th><th>Diamante</th></tr>
+			<tr><td>Corte </td><td>Corte </td><td>Corte </td></tr>
+			<tr><td>Penteado </td><td>Penteado </td><td>penteado</td></tr>
+			<tr><td>Sesão de Relaxamento</td><td>Sesão de Relaxamento </td><td>Sesão de Relaxamento </td></tr>
+			<tr><td>Barbear </td><td>Barbear </td><td>Barbear </td></tr>
+			<tr><td>Maquiagem </td><td>Maquiagem </td><td>Maquiagem </td></tr>
+			<tr><td>Manicure </td><td>Manicure </td><td>Manicure </td></tr>
+			<tr><td>Pedicure</td><td>Peicure </td><td>Pedicure</td></tr>
+			<tr><td>Massagem</td><td>Massagem </td><td>Podologia</td></tr>
+			<tr><td> </td><td>Depilação de Orelha</td><td>Sombrancelha </td></tr>
+			<tr><td> </td><td>Depilação de Nariz</td><td>Limpeza de Pele</td></tr>
+			<tr><td> </td><td>Depilação de Sombrancelha</td><td>Depilação Total </td></tr>
+			<tr><td> </td><td>Limpeza de Pele</td><td>Massagem </td></tr>
+		</table>
+					</section>
 		</section>
-		<section id="servico">
-			<h3 class="titulo-centralizado">Benefícios</h3>
-				<div class="beneficios">
-					<ul>
-						<li class="itens">. Atendimento aos Clientes</li>
-						<li class="itens">. Espaço diferenciado</li>
-						<li class="itens">. Localização</li>
-						<li class="itens">. Profissionais Qualificados</li>
-					</ul>
-					<img src="beneficios.png" class="imagembeneficios">
+			<section id="cortes">
+				<h1>CORTES EM ALTA</h1>
+				<div class="fundo">
+				<div class="cortesa">
+				<img class="alta" src="corte1.jpg">
+				<img class="alta" src="corte2.jpg">
+				<img class="alta" src="corte3.jpeg">
 				</div>
-		</section>
-			<section id="odia">
-				<div class="noivo">
-					<h2 class="titulo-centralizado">O dia do noivo</h2>
-					<p>Já foi o tempo em que o dia do casamento era sinônimo de “Dia da Noiva”, onde todos os mimos eram pensados exclusivamente para elas. A "Barbearia Alura" apresenta o “Dia do Noivo” para que os homens também curtam ao máximo este momento da vida. Afinal, uma ocasião especial merece tratamento exclusivo! Com serviços e atendimento exclusivo, o intuito é proporcionar ao cavalheiro relaxamento e cuidado com o visual para estar impecável no grande momento do “sim”. E o melhor: em todas as nossas Unidades, o cavalheiro tem uma sala especial e climatizada para se preparar e para receber os padrinhos e convidados no maior conforto e estilo.</p>
+				<div class="cortesa">
+				<img class="alta" src="corte4.jpg">
+				<img class="alta" src="corte5.png">
+				<img class="alta" src="corte6.jpg">
 				</div>
-			<!-- Javascript -->
-<script type="text/javascript">
-	window.onload=function(){
-	var tfrow = document.getElementById('tfhover').rows.length;
-	var tbRow=[];
-	for (var i=1;i<tfrow;i++) {
-		tbRow[i]=document.getElementById('tfhover').rows[i];
-		tbRow[i].onmouseover = function(){
+				</div>
 
-	}
-};
-</script>
-
-<style type="text/css">
-table.tftable {font-size:12px;color:rgb(255, 255, 255);width:100%;border-width: 1px;border-color: #000000;border-collapse: collapse;}
-table.tftable th {font-size:20px;background-color:rgb(0, 0, 0);border-width: 1px;padding: 8px;border-style: solid;border-color: #b6b6b6;text-align:left;}
-table.tftable tr {background-color:#474747;}
-table.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #000000;}
-table.tftable td {text-align: center;}
-table.tftable th {text-align: center;}
-</style>
-
-<table id="tfhover" class="tftable" border="1">
-<tr><th>Prata</th><th>Ouro</th><th>Diamante</th></tr>
-<tr><td>Corte </td><td>Corte </td><td>Corte </td></tr>
-<tr><td>Penteado </td><td>Penteado </td><td>penteado</td></tr>
-<tr><td>Sesão de Relaxamento</td><td>Sesão de Relaxamento </td><td>Sesão de Relaxamento </td></tr>
-<tr><td>Barbear </td><td>Barbear </td><td>Barbear </td></tr>
-<tr><td>Maquiagem </td><td>Maquiagem </td><td>Maquiagem </td></tr>
-<tr><td>Manicure </td><td>Manicure </td><td>Manicure </td></tr>
-<tr><td>Linha:7 </td><td>Linha:7 </td><td>Linha:7 </td></tr>
-<tr><td>Linha:8 </td><td>Linha:8 </td><td>Linha:8 </td></tr>
-<tr><td>Linha:9 </td><td>Linha:9 </td><td>Linha:9 </td></tr>
-<tr><td>Linha:10 </td><td>Linha:10 </td><td>Linha:10 </td></tr>
-<tr><td>Linha:11 </td><td>Linha:11 </td><td>Linha:11 </td></tr>
-<tr><td>Linha:12 </td><td>Linha:12 </td><td>Linha:12 </td></tr>
-<tr><td>Linha:13 </td><td>Linha:13 </td><td>Linha:13 </td></tr>
-<tr><td>Linha:14 </td><td>Linha:14 </td><td>Linha:14 </td></tr>
-<tr><td>Linha:15 </td><td>Linha:15 </td><td>Linha:15 </td></tr>
-<tr><td>Linha:16 </td><td>Linha:16 </td><td>Linha:16 </td></tr>
-<tr><td>Linha:17 </td><td>Linha:17 </td><td>Linha:17 </td></tr>
-<tr><td>Linha:18 </td><td>Linha:18 </td><td>Linha:18 </td></tr>
-<tr><td>Linha:19 </td><td>Linha:19 </td><td>Linha:19 </td></tr>
-</table>
 			</section>
-</section>
-<section id ="contato">
-		<footer class="rodape">
-		<h4> <p>Rua Bahia, 1258 Centro  86.690-000 - Colorado - PR</p>
-			<p>E-mail: clomonteirolobato@seed.pr.gov.br</p>
-			<p>Tel: (44) 3323-1012    (44) 3323-1055 </p>
-			</h4>
-		</footer>
-</section>
-		</body>
-	</body>
-</html>
+		<section id ="contato">
+				<footer class="rodape">
+				<h4> <p>Rua Bahia, 1258 Centro  86.690-000 - Colorado - PR</p>
+					<p>E-mail: clomonteirolobato@seed.pr.gov.br</p>
+					<p>Tel: (44) 3323-1012    (44) 3323-1055 </p>
+					</h4>
+				</footer>
+		</section>
+				</body>
+			</body>
+		</html>
